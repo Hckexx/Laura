@@ -1,0 +1,25 @@
+{
+  "name": "laura-tv-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unified workspace for LauraTV Web frontend and IBRAX Media API backend",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "postinstall": "npm ci --prefix web && npm ci --prefix server",
+    "dev": "concurrently -n \"web,server\" -c \"blue,green\" \"npm run dev:web\" \"npm run dev:server\"",
+    "dev:web": "npm run dev --prefix web",
+    "dev:server": "npm run dev --prefix server",
+    "build": "npm run build:web && npm run build:server",
+    "build:web": "npm run build --prefix web",
+    "build:server": "npm run build --prefix server",
+    "lint": "npm run lint --prefix web",
+    "test": "npm test --prefix server && npm run test:cowatch --prefix web",
+    "typecheck": "npm run build:web && npm run build:server",
+    "package": "powershell -ExecutionPolicy Bypass -File ./scripts/package-code.ps1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

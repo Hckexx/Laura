@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "LauraTV",
+    "slug": "lauratv",
+    "version": "1.4",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "lauratv",
+    "userInterfaceStyle": "dark",
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "in.theunfilteredgoose.lauratv"
+    },
+
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0d0f12"
+      },
+      "package": "in.theunfilteredgoose.lauratv",
+      "versionCode": 5,
+      "backgroundColor": "#0d0f12",
+      "permissions": [
+        "INTERNET",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS",
+        "WAKE_LOCK"
+      ]
+    },
+
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+
+    "plugins": [
+      "expo-router",
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#0d0f12",
+          "imageWidth": 200
+        }
+      ]
+    ],
+
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

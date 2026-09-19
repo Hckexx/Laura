@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+
+# Expo / Metro generated state
+.expo/
+.expo-shared/
+.metro-health-check*
+expo-env.d.ts
+
+# Expo / web build output
+dist/
+web-build/
+coverage/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Android generated output / local machine state
+android/.gradle/
+android/build/
+android/app/build/
+android/.cxx/
+android/app/.cxx/
+android/captures/
+android/local.properties
+android/.idea/
+android/**/*.iml
+
+# Generated React Native / Expo native files
+android/app/src/main/java/inline/
+*.jsbundle
+
+# Android packages
+*.apk
+*.aab
+
+# Signing keys / certificates
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Local caches / temporary files
+.cache/
+.tmp/
+tmp/
+temp/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
